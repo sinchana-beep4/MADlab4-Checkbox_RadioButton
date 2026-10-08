@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#C1F6C4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your products!"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:fontFamily="cursive"
+        android:textColor="#093E0D"
+        android:layout_margin="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Farmhouse Pizza: 100 Rs"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1" />
+
+    <CheckBox
+        android:id="@+id/coffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cold Coffee: 50 Rs"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pizza" />
+
+    <CheckBox
+        android:id="@+id/burger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Burger: 120 Rs"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coffee" />
+
+    <Button
+        android:id="@+id/submit"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete Purchase"
+        android:textColor="@color/white"
+        android:padding="10sp"
+        android:textSize="17sp"
+        android:layout_margin="10sp"
+        android:backgroundTint="#093E0D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/burger" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit" />
+
+    <TextView
+        android:id="@+id/modeOfService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10sp"
+        android:text="Mode of Service"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#093E0D"
+        android:layout_margin="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/submit" />
+
+    <RadioButton
+        android:id="@+id/dineIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dine-In"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/modeOfService"
+    />
+
+    <RadioButton
+        android:id="@+id/takeaway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Takeaway"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dineIn"
+    />
+
+    <RadioButton
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery"
+        android:textSize="20sp"
+        android:padding="10sp"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/takeaway"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
