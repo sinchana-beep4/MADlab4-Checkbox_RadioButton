@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">madButton</string>
+    <string name="product_selection">Select your products!</string>
+    <string name="farmhouse_pizza">Farmhouse Pizza: 100 Rs</string>
+    <string name="cold_coffee">Cold Coffee: 50 Rs</string>
+    <string name="burger">Burger: 120 Rs</string>
+    <string name="mode_of_service">Mode of Service</string>
+    <string name="dine_in">Dine-In</string>
+    <string name="takeaway">Takeaway (5 rs extra per dish)</string>
+    <string name="delivery">Delivery (10 rs base price + 5 rs extra per km)</string>
+    <string name="enter_distance">Enter distance in km (ex: 2.2, 4.0, 3.5)</string>
+    <string name="complete_purchase">Complete Purchase</string>
+    <string name="cat_cafe">Cat Cafe</string>
+    <string name="donation">Every purchase helps us maintain a safe space for our cats!</string>
+    <string name="image_desc">Cute orange cat rolling in the grass</string>
 </resources>
